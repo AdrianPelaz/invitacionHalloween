@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación a Halloween</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="estilos/halloweenInvitacion.css" />
+    <script src="javascripts/halloweenInvitacion.js"></script>
+  </head>
+  <body onload="sonar('danzaEsqueletos')">
+    <div id="container">
+      <audio
+        id="danzaEsqueletos"
+        src="sonidos/laDanzaDeLosEsqueletos.mp3"
+        controls
+      ></audio>
+      <audio id="murcielago" src="sonidos/murcielago.mp3"></audio>
+      <h1>Bienvenidos a la Fiesta de muertos llenos de vida</h1>
+      <p id="datosFiesta">
+        Día: 09/11/2020<br />
+        Dirección: IES Campanillas<br />
+        Hora:21:00 <br />
+        Trae tu mejor disfraz
+      </p>
+      <p id="advertencia">OJO "No tocar"</p>
+      <img id="esqueleto" src="imagenes/esqueleto.gif" />
+      <img id="esqueleto2" src="imagenes/esqueleto_2.gif" />
+      <img id="bats" src="imagenes/bat.gif" width="200" />
+      <img id="spider" src="imagenes/spider.gif" width="200" />
+      <div
+        id="calabaza"
+        onmouseover="mostrar('bats');sonar('murcielago')"
+        onmouseout="ocultar('bats');parar('murcielago')"
+      ></div>
+    </div>
+  </body>
+</html>
